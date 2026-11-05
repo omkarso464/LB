@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class Arithematic
+{
+    public: 
+        float No1;
+        float No2;
+
+        Arithematic(float A,float B)
+        {
+            No1 = A;
+            No2 = B;
+        }
+
+        float Addition()
+        {
+            float Ans;
+            Ans = No1 + No2;
+            return Ans;
+        }
+
+};
+
+
+int main()
+{
+    Arithematic aobj1(10.12f,11.23f);
+    Arithematic aobj2(20.2f,21.123f);
+
+    cout<<aobj1.Addition()<<"\n";
+    cout<<aobj2.Addition()<<"\n";
+
+    return EXIT_SUCCESS;
+}
